@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "ts-node-dev --respawn --transpile-only src/server.ts",
-    "lint:fix": "eslint --fix",
+    "lint:fix": "eslint . --fix",
+    "prettier:fix":"prettier --write .",
     "lint:check": "eslint --ignore-path .eslintignore --ext .js,.ts .",
     "prettier:check": "yarn prettier --ignore-path .gitignore --write \"**/*.+(js|ts|json)\"",
     "lint-prettier": "yarn lint:check && yarn prettier:check"
@@ -14,8 +15,8 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "lint-staged":{
-    "src/**/*.ts":"yarn lint-prettier"
+  "lint-staged": {
+    "src/**/*.ts": "yarn lint-prettier"
   },
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^6.4.0",
