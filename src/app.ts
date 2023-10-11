@@ -7,10 +7,10 @@ const app: Application = express()
 app.use(cors())
 
 //parser
-    app.use(express.json())
+app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
 
-app.get('/', (req: Request, res: Response) => {
+app.get('/', (req: Request, res: any) => {
   res.send('Hello word')
 })
 
