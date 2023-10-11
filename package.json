@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "ts-node-dev --respawn --transpile-only src/server.ts",
     "lint:fix": "eslint . --fix",
-    "prettier:fix":"prettier --write .",
+    "prettier:fix": "prettier --write .",
     "lint:check": "eslint --ignore-path .eslintignore --ext .js,.ts .",
     "prettier:check": "yarn prettier --ignore-path .gitignore --write \"**/*.+(js|ts|json)\"",
     "lint-prettier": "yarn lint:check && yarn prettier:check"
